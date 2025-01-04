@@ -13,10 +13,12 @@ nav {
 }
 .nav-logo {
   position: relative;
+  display: flex;
+  max-width: 39em; /*Se agrega */
 }
 
 .nav-logo img{
-  width: 50%;
+  max-width: 30%;
 }
 .nav-name {
   font-size: 30px;
