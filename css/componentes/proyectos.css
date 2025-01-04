@@ -1,0 +1,119 @@
+/* ----- PROJECTS BOX ----- */
+.project-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.project-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    overflow: hidden;
+}
+
+.project-box img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 900px){
+    .project-container{
+        justify-content: center;
+    }
+    .project-box{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .project-box{
+        width: 100%;
+    }
+}  
+
+.project-box>i{
+    font-size: 50px;
+    color: #00B5E7;
+    margin-bottom: 25px;
+}
+.project-box label{
+    font-size: 15px;
+    color: #00B5E7;
+}
+.project-box i{
+    color: aliceblue;
+}
+
+.project-box h3{
+    color: aliceblue;
+}
+
+.project-box::after, .contact-info::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: linear-gradient(transparent, #0e4cd3 75%);
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: 1;
+}
+.project-box:hover.project-box::after,
+.contact-info:hover.contact-info::after{
+    bottom: 0;
+}
+/* .project-box:hover.project-box i,
+.project-box:hover.project-box>h3,
+.project-box:hover.project-box>label{
+    color: var(--color-white);
+    z-index: 2;
+} */
+
+.project-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+    opacity: 0; /* Oculta el overlay inicialmente */
+    transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Coloca el overlay encima del contenido de la caja */
+}
+
+.project-box:hover .overlay {
+    opacity: 1; /* Muestra el overlay al pasar el mouse */
+}
+
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* Espacio entre el label y los botones */
+}
+
+.demo-btn,
+.repo-btn {
+    padding: 8px 16px;
+    background-color: #00B5E7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
