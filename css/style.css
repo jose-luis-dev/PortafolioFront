@@ -1,11 +1,12 @@
-/* ----- POPPINS FONT Link ----- */
+/* -----FONT Link ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url(/css/componentes/header.css);
 @import url(/css/componentes/about.css);
 @import url(/css/componentes/proyectos.css);
 @import url(/css/componentes/contacto.css);
 @import url(/css/componentes/footer.css);
-/* ----- VARIABLES ----- */
+
+/* ----- VARIABLES GENERALES ----- */
 :root{
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
@@ -17,6 +18,7 @@
     --third-color: rgb(40, 91, 151);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
+
 /* ----- BASE ----- */
 *{
     margin: 0;
@@ -112,8 +114,9 @@ body{
     filter: blur(50px);
 }
 
+
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
-@media only screen and (max-width: 1024px){
+/* @media only screen and (max-width: 1024px){
     .featured-text{
         padding: 0;
     }
@@ -121,12 +124,11 @@ body{
         width: 320px;
         height: 320px;
     }
-}
-
+} */
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
-    .nav-button{
+    /* .nav-button{
         display: none;
     }
     .nav-menu.responsive{
@@ -179,8 +181,8 @@ body{
     .image, .image img{
         width: 150px;
         height: 150px;
-    }
-    .row{
+    } */
+    /* .row{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -190,31 +192,30 @@ body{
         display: flex;
         justify-content: center;
         width: 100%;
-    }
-    .about-info, .contact-info{
+    } */
+    /* .about-info, .contact-info{
         width: 100%;
-    }
-    .project-container{
+    } */
+    /* .project-container{
         justify-content: center;
-    }
-    .project-box{
+    } */
+    /* .project-box{
         width: 80%;
-    }
+    } */
 }
-
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 @media only screen and (max-width: 540px){
-    .featured-name{
+    /* .featured-name{
         font-size: 40px;
-    }
-    .project-box{
+    } */
+    /* .project-box{
         width: 100%;
-    }
-    .form-inputs{
+    } */
+    /* .form-inputs{
         flex-direction: column;
     }
     .input-field{
         width: 100%;
-    }
+    } */
 }
