@@ -1,13 +1,17 @@
 /* ----- FOOTER BOX ----- */
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     row-gap: 30px;
-    background: #F8F8F8;
     padding-block: 40px 60px;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(125% 125% at 50% 10%, #0d1117 40%, #350136 100%);
+    z-index: 1;
 }
+
 .top-footer p{
     font-size: 25px;
     font-weight: 600;
@@ -32,3 +36,7 @@ footer{
     font-size: 14px;
     margin-top: 10px;
 }
+
+/* .visual{
+    background: radial-gradient(125% 125% at 50% 10%, #0d1117 40%, #350136 100%);background: radial-gradient(125% 125% at 50% 10%, #0d1117 40%, #350136 100%);
+} */
