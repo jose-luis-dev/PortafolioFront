@@ -1,10 +1,10 @@
 /* -----FONT Link ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import url(/css/componentes/header.css);
-@import url(/css/componentes/about.css);
-@import url(/css/componentes/proyectos.css);
-@import url(/css/componentes/contacto.css);
-@import url(/css/componentes/footer.css);
+@import url(./componentes/header.css);
+@import url(./componentes/about.css);
+@import url(./componentes/proyectos.css);
+@import url(./componentes/contacto.css);
+@import url(./componentes/footer.css);
 
 /* ----- VARIABLES GENERALES ----- */
 :root{
