@@ -5,9 +5,6 @@
 @import url(/css/componentes/proyectos.css);
 @import url(/css/componentes/contacto.css);
 @import url(/css/componentes/footer.css);
-@import url(/css/componentes/background.css);
-
-
 
 /* ----- VARIABLES GENERALES ----- */
 :root{
@@ -20,10 +17,10 @@
     --second-color: rgb(0, 201, 255);
     --third-color: rgb(40, 91, 151);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
+
     --glow-color: rgba(16, 185, 129, 0.35);
     --glow-position: 50% 300px;
     --glow-size: 500px;
-
 }
 
 /* ----- BASE ----- */
@@ -33,6 +30,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 /* ----- SMOOTH SCROLL ----- */
 html{
     scroll-behavior: smooth;
@@ -71,179 +69,17 @@ html{
     background: var(--first-color);
     color: var(--color-white);
 }
+
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
     font-size: 16px;
 }
+
 /* ------- BASE -------- */
 body{
-    /* background: var(--body-color); */
-    background: var();
+    background: var(--body-color);
 }
 .container{
     width: 100%;
     position: relative;
-}
-
-.wrapper_circle::before{
-    content: '';
-    position: absolute;
-    top: 140px;
-    width: 200px;
-    height: 200px;
-    background-color: var(--first-color);
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(50px);
-}
-
-.wrapper_circle::after{
-    content: '';
-    position: absolute;
-    top: 160px;
-    right: 10vw;
-    width: 100px;
-    height: 100px;
-    background-color: var(--first-color);
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(50px);
-}
-
-.wrapper_circle .circle-1{
-    position: absolute;
-    bottom: 100px;
-    left: 60%;
-    width: 50px;
-    height: 50px;
-    background-color: var(--first-color-hover);
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(50px);
-}
-
-
-/* ----- GLOW BACKGROUND ----- */
-.glow-background {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    background-color: #020617;
-    overflow: hidden; /* Por si el glow sobresale */
-}
-
-.glow-background::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(circle 500px at 50% 300px, rgba(16, 185, 129, 0.35), transparent);
-    z-index: -1;
-}
-
-
-
-
-/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
-/* @media only screen and (max-width: 1024px){
-    .featured-text{
-        padding: 0;
-    }
-    .image, .image img{
-        width: 320px;
-        height: 320px;
-    }
-} */
-
-/* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 900px) {
-    /* .nav-button{
-        display: none;
-    }
-    .nav-menu.responsive{
-        left: 0;
-    }
-    .nav-menu{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(20px);
-        width: 100%;
-        min-height: 450px;
-        height: 90vh;
-        transition: .3s;
-    }
-    .nav_menu_list{
-        flex-direction: column;
-    }
-    .nav-menu-btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .featured-box{
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-    }
-    .featured-text{
-        width: 100%;
-        order: 2;
-        justify-content: center;
-        align-content: flex-start;
-        min-height: 60vh;
-    }
-    .social_icons{
-        margin-top: 2em;
-    }
-    .featured-image{
-        order: 1;
-        justify-content: center;
-        min-height: 150px;
-        width: 100%;
-        margin-top: 65px;
-    }
-    .image, .image img{
-        width: 150px;
-        height: 150px;
-    } */
-    /* .row{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 50px;
-    }
-    .col{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    } */
-    /* .about-info, .contact-info{
-        width: 100%;
-    } */
-    /* .project-container{
-        justify-content: center;
-    } */
-    /* .project-box{
-        width: 80%;
-    } */
-}
-
-/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
-@media only screen and (max-width: 540px){
-    /* .featured-name{
-        font-size: 40px;
-    } */
-    /* .project-box{
-        width: 100%;
-    } */
-    /* .form-inputs{
-        flex-direction: column;
-    }
-    .input-field{
-        width: 100%;
-    } */
 }
