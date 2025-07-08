@@ -36,6 +36,7 @@
 .top-header{
     text-align: center;
     margin-bottom: 5em;
+    margin-top: 2em;
 }
 .top-header h1{
     font-weight: 600;
@@ -57,7 +58,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-block: 30px 70px;
+    padding-block: 30px 90px;
     padding-inline: 20px;
     width: 100%;
     background: var(--color-white);
@@ -73,7 +74,7 @@
 
 
 .about-info p{
-    text-align: center;
+    /* text-align: center; */
     font-size: 15px;
     color: #777;
 }
@@ -90,7 +91,7 @@
 }
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box{
-    margin: 10px;
+    margin: 1em;
 }
 .skills-header{
     margin-bottom: 30px;

@@ -5,6 +5,9 @@
 @import url(/css/componentes/proyectos.css);
 @import url(/css/componentes/contacto.css);
 @import url(/css/componentes/footer.css);
+@import url(/css/componentes/background.css);
+
+
 
 /* ----- VARIABLES GENERALES ----- */
 :root{
@@ -17,6 +20,10 @@
     --second-color: rgb(0, 201, 255);
     --third-color: rgb(40, 91, 151);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
+    --glow-color: rgba(16, 185, 129, 0.35);
+    --glow-position: 50% 300px;
+    --glow-size: 500px;
+
 }
 
 /* ----- BASE ----- */
@@ -70,7 +77,8 @@ i{
 }
 /* ------- BASE -------- */
 body{
-    background: var(--body-color);
+    /* background: var(--body-color); */
+    background: var();
 }
 .container{
     width: 100%;
@@ -113,6 +121,26 @@ body{
     z-index: -1;
     filter: blur(50px);
 }
+
+
+/* ----- GLOW BACKGROUND ----- */
+.glow-background {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #020617;
+    overflow: hidden; /* Por si el glow sobresale */
+}
+
+.glow-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle 500px at 50% 300px, rgba(16, 185, 129, 0.35), transparent);
+    z-index: -1;
+}
+
+
 
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */

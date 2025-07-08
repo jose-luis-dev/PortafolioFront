@@ -18,6 +18,7 @@ function headerShadow() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 
         navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
+        navHeader.style.background = "var(--body-color)";
         navHeader.style.height = "70px";
         navHeader.style.lineHeight = "70px";
 
@@ -26,9 +27,28 @@ function headerShadow() {
         navHeader.style.boxShadow = "none";
         navHeader.style.height = "90px";
         navHeader.style.lineHeight = "90px";
+        navHeader.style.background = "transparent";
 
     }
 }
+
+// let lastScrollTop = 0;
+// function isAtBottom(){
+//     return(window.innerHeight + window.screenY)>= document.body.offsetHeight;
+// }
+
+// window.addEventListener('scroll', function(){
+//     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+//     if (isAtBottom){
+//         console.log('Ocultar navbar')
+//     }else if (scrollTop < lastScrollTop){
+//         console.log('Mostrar navbar');
+    
+//     }
+// })
+
+
 
 
 /* ----- TYPING EFFECT ----- */
