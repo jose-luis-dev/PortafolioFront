@@ -19,9 +19,8 @@ function headerShadow() {
 
         navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
         navHeader.style.background = "var(--body-color)";
-        navHeader.style.height = "70px";
-        navHeader.style.lineHeight = "70px";
-
+        navHeader.style.height = "75px";
+        navHeader.style.lineHeight = "75px";
     } else {
 
         navHeader.style.boxShadow = "none";

@@ -7,11 +7,11 @@ nav {
   height: 90px;
   line-height: 90px;
   background-color: transparent;
-  /* background: var(--body-color); */
   padding-inline: 9vw;
   transition: .3s;
   z-index: 100;
 }
+
 .nav-logo {
   position: relative;
   display: flex;
@@ -28,17 +28,18 @@ nav {
   color: var(--text-color-third);
 }
 
-.nav-logo span {
+/* .nav-logo span {
   position: absolute;
   top: -15px;
   right: -20px;
   font-size: 5em;
   color: var(--text-color-second);
-}
+} */
 
 .nav-menu,
 .nav_menu_list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-menu .nav_list {
@@ -51,8 +52,9 @@ nav {
   text-decoration: none;
   color: var(--text-color-second);
   font-weight: 500;
-  padding-inline: 15px;
-  margin-inline: 20px;
+  padding-inline: 10px;
+  margin-inline: 10px;
+  font-size: 1em;
 }
 
 .nav-menu-btn {
@@ -63,9 +65,11 @@ nav {
   font-size: 28px;
   cursor: pointer;
 }
+
 .active-link {
   position: relative;
-  color: var(--first-color);
+  color: var(--text-color-third);
+  font-weight: bold;
   transition: 0.3;
 }
 .active-link::after {
@@ -76,13 +80,33 @@ nav {
   transform: translate(-50%, -50%);
   width: 5px;
   height: 5px;
-  background: var(--first-color);
+  background: var(--text-color-third);
   border-radius: 50%;
 }
 /* ----- WRAPPER DESIGN ----- */
 .wrapper {
   padding-inline: 10vw;
 }
+
+/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}
+
 /* ----- FEATURED BOX ----- */
 .featured-box {
   position: relative;
@@ -278,6 +302,12 @@ nav {
   .image, .image img{
       width: 150px;
       height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding-inline: 5vw;
   }
 }
 

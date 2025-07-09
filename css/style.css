@@ -1,82 +1,80 @@
 /* -----FONT Link ----- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url(./componentes/header.css);
 @import url(./componentes/about.css);
 @import url(./componentes/proyectos.css);
 @import url(./componentes/contacto.css);
 @import url(./componentes/footer.css);
+@import url(./componentes/navbar.css);
 
 /* ----- VARIABLES GENERALES ----- */
 :root {
-    --body-color: #0d1117;                 /* Fondo base */
-    --color-white: #f8fafc;                /* Texto blanco suave */
-    --text-color-second: #94a3b8;          /* Gris azulado */
-    --text-color-third: #10b981;           /* Verde esmeralda brillante */
-    --first-color: #22d3ee;                /* Azul celeste para botones */
-    --first-color-hover: #0ea5e9;          /* Hover azul más fuerte */
-    --second-color: #9333ea;               /* Morado acento */
-    --third-color: #14b8a6;                /* Verde-agua */
-    --first-shadow-color: rgba(0, 0, 0, 0.4); /* Sombras más visibles */
-    
+    --body-color: #0d1117;
+    /* Fondo base */
+    --color-white: #f8fafc;
+    /* Texto blanco suave */
+    --text-color-second: #94a3b8;
+    /* Gris azulado */
+    --text-color-third: #10b981;
+    /* Verde esmeralda brillante */
+    --first-color: #22d3ee;
+    /* Azul celeste para botones */
+    --first-color-hover: #0ea5e9;
+    /* Hover azul más fuerte */
+    --second-color: #9333ea;
+    /* Morado acento */
+    --third-color: #14b8a6;
+    /* Verde-agua */
+    --first-shadow-color: rgba(0, 0, 0, 0.4);
+    /* Sombras más visibles */
+
     --glow-color: rgba(16, 185, 129, 0.35);
     --glow-position: 50% 300px;
     --glow-size: 500px;
-}  
+}
 
 /* ----- BASE ----- */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* ----- SMOOTH SCROLL ----- */
-html{
+html {
     scroll-behavior: smooth;
-}
-/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
-::-webkit-scrollbar{
-    width: 10px;
-    border-radius: 25px;
-}
-::-webkit-scrollbar-track{
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb{
-    background: #ccc;
-    border-radius: 30px;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: #bbb;
 }
 
 /* ---##-- REUSABLE CSS --##--- */
 /* ----- BOTON GENERAL ----- */
-.btn{
+.btn {
     font-weight: 500;
-    padding: 12px 12px; /*20px*/
+    padding: 12px 12px;
+    /*20px*/
     background: #efefef;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: .4s;
+    transition: 0.4s;
 }
-.btn>i{
+
+.btn>i {
     margin-left: 5px;
 }
-.btn:hover{
+
+.btn:hover {
     background: var(--first-color);
     color: var(--color-white);
 }
 
 /* ----- GLOBAL ICONS DESIGN ----- */
-i{
+i {
     font-size: 16px;
 }
 
 /* ------- BASE -------- */
-body{
+body {
     /* background: var(--body-color); */
     background-color: #0d1117;
     position: relative;
@@ -91,7 +89,9 @@ body::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(circle var(--glow-size) at var(--glow-position), var(--glow-color), transparent 70%);
+    background: radial-gradient(circle var(--glow-size) at var(--glow-position),
+            var(--glow-color),
+            transparent 70%);
     z-index: -1;
     pointer-events: none;
     opacity: 0.8;
@@ -100,17 +100,20 @@ body::before {
 
 /* Animación suave del glow */
 @keyframes pulseGlow {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.7;
         transform: scale(1);
     }
+
     50% {
         opacity: 1;
         transform: scale(1.05);
     }
 }
 
-.container{
+.container {
     width: 100%;
     position: relative;
 }
